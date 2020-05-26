@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_view_thanks_image"
+        android:src="@drawable/orange"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"/>
+
+    <TextView
+        android:id="@+id/text_view_thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_thanks_image"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:text="Thank you for your custom!"/>
+
+    <Button
+        android:id="@+id/btn_goto_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_login_button"
+        android:text="Return to Home"
+        android:textColor="@color/colorButtonText"
+        android:layout_below="@+id/text_view_thank_you"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="180dp"/>
+
+</RelativeLayout>

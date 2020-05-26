@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_address_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_layout_bottom"
+        android:layout_below="@+id/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_goto_payment"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="Go To Payment"
+            android:layout_toEndOf="@id/btn_add_new_address"
+            android:textColor="@color/colorButtonText"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_add_new_address"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:text="ADD A NEW ADDRESS"
+            android:textColor="@color/colorButtonText"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

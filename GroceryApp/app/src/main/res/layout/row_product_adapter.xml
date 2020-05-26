@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_view_product"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/text_view_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@+id/image_view_product"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/text_view_product_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_product_name"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@id/image_view_product"
+        android:text="MRP"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_view_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_product_name"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@id/text_view_product_mrp"
+        android:text="Price"
+        android:textColor="#04DC04"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_add_cart_item"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:background="@color/colorAccent"
+        android:text="Add"
+        android:textColor="@color/colorButtonText"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_view_product_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_product"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Quantity:"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_plus_product"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/image_view_product"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/text_view_product_item_quantity"
+        android:background="@color/colorAccent"
+        android:text="+"
+        android:textColor="@color/colorButtonText"
+        android:textSize="22sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_minus_product"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/text_view_product_item_quantity"
+        android:background="@color/colorAccent"
+        android:text="-"
+        android:textColor="@color/colorButtonText"
+        android:textSize="22sp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

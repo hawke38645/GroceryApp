@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_view_title_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="REGISTER"
+            android:textColor="@color/colorButtonText"
+            android:textSize="32sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_email_reg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_title_reg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_email_reg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_title_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:hint="Email"
+                android:textColor="@color/colorButtonText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_name_reg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_email_reg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_name_reg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_email_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:hint="Name"
+                android:textColor="@color/colorButtonText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_password_reg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_name_reg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_password_reg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_name_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorButtonText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_mobile_reg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_password_reg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_mobile_reg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_password_reg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:hint="Mobile"
+                android:textColor="@color/colorButtonText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_mobile_reg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_login_button"
+            android:text="REGISTER"
+            android:textColor="@color/colorButtonText" />
+
+        <TextView
+            android:id="@+id/text_view_clickable_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Already Registered? Click here."
+            android:textColor="@color/colorButtonText" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

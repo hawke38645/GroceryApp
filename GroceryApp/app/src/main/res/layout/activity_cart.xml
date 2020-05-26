@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_layout_bottom"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/text_view_cart_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Your cart is empty"
+        android:textSize="32sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:background="#D3D3D3"
+            android:id="@+id/text_view_cart_total_mrp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Mrp:"
+            android:textSize="12sp" />
+        <TextView
+            android:background="#D3D3D3"
+            android:id="@+id/text_view_cart_total_discount"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/text_view_cart_total_mrp"
+            android:layout_height="20dp"
+            android:text="Discount:"
+            android:textSize="12sp" />
+        <TextView
+            android:background="#D3D3D3"
+            android:id="@+id/text_view_cart_total_price"
+            android:layout_below="@+id/text_view_cart_total_discount"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Price:"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_cart_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorButtonText"
+            android:text="Checkout"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/text_view_cart_total_price"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

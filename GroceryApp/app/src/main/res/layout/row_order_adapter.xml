@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_view_order_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="User Name" />
+
+    <TextView
+        android:id="@+id/text_view_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_user_name"
+        android:layout_marginStart="8dp"
+        android:text="DATE" />
+
+    <TextView
+        android:id="@+id/text_view_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/text_view_order_city"
+        android:text="ORDER ID" />
+
+    <TextView
+        android:id="@+id/text_view_order_total_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="TOTAL PAYMENT" />
+
+    <TextView
+        android:id="@+id/text_view_order_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_view_order_date"
+        android:layout_marginStart="8dp"
+        android:text="CITY NAME" />
+
+    <Button
+        android:id="@+id/btn_delete_address_item"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="CANCEL"
+        android:textColor="@color/colorButtonText"
+        android:textSize="10sp" />
+
+</RelativeLayout>

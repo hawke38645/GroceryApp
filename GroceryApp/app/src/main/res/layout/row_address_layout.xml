@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_view_address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/text_view_address_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_address_name"
+        android:layout_marginStart="8dp"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/text_view_address_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/text_view_address_location"
+        android:text="1-630-344-3333" />
+
+    <TextView
+        android:id="@+id/text_view_address_street_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="STREET NAME" />
+
+    <TextView
+        android:id="@+id/text_view_address_city"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_address_street_name"
+        android:layout_marginStart="150dp"
+        android:text="CITY NAME" />
+
+    <TextView
+        android:id="@+id/text_view_address_pincode"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_address_city"
+        android:layout_marginStart="150dp"
+        android:text="PINCODE" />
+
+    <Button
+        android:id="@+id/btn_delete_address_item"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Remove"
+        android:textColor="@color/colorButtonText"
+        android:textSize="10sp" />
+
+
+</RelativeLayout>
