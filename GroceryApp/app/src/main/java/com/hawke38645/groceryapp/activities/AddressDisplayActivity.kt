@@ -66,7 +66,7 @@ class AddressDisplayActivity : AppCompatActivity(), AdapterAddress.OnAdapterAddr
                 var gson = GsonBuilder().create()
                 var addressList = gson.fromJson(it.toString(), AddressList::class.java)
                 mList = addressList.data
-                Toast.makeText(this, "" + mList.size, Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "" + mList.size, Toast.LENGTH_SHORT).show()
                 adapterAddress.setData(mList)
             },
             Response.ErrorListener {

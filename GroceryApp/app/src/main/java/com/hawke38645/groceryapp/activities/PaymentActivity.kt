@@ -60,36 +60,17 @@ class PaymentActivity : AppCompatActivity() {
         var shippingAddress = ShippingAddress(shpAdrCity, shpAdrHouseNo, shpAdrPincode, shpAdrStreetName)
 
         var orderSum = dataBaseHelper.calculateOrderSummary()
-        var summary = Summary(deliveryCharges = 20, discount = orderSum.discount.toDouble(), totalAmount = orderSum.totalPrice.toInt())
+        var summary = Summary(deliveryCharges = 2, discount = orderSum.discount.toDouble(), totalAmount = orderSum.totalPrice.toInt())
 
         var mList: ArrayList<CartItem> = dataBaseHelper.readCartItems()
 
-//        for (i in 0 until mList.size) {
-//            var product = Product()
-//            product._id = mList[i]._id
-//            product.price = mList[i].price
-//            product.quantity = mList[i].quantity
-//            product.mrp = mList[i].mrp
-//            product.image = mList[i].imageURL
-//            products.add(product)
-//        }
+        for (i in 0 until mList.size) {
+            var product = Product(mList[i]._id, mList[i].imageURL, mList[i].mrp, mList[i].price, mList[i].quantity)
+            products.add(product)
+        }
 
         //Order(_v, _id, date, orderStatus, orderSummary, payment, orderProducts, shippingAddress, orderUser, userId)
-        var order = Order(shippingAddress = shippingAddress, users = users, orderSummary = summary, userId = sessionManager.getUserId()!!)
-
-        var params = HashMap<String, String?>()
-
-//        params["_v"] = null
-//        params["_id"] = null
-//        params["date"] = null
-//        params["orderStatus"] = null
-//        params["orderSummary"] = null
-//        params["payment"] = null
-//        params["Products"] = products.toString()
-
-        params["shippingAddress"] = shippingAddress.toString()
-        params["User"] = users.toString()
-        params["userId"] = sessionManager.getUserId()
+        var order = Order(shippingAddress = shippingAddress, users = users, orderSummary = summary, userId = sessionManager.getUserId()!!, products = products)
 
         var requestQueue = newRequestQueue(this)
         var jsonObject = JSONObject(Gson().toJson(order))

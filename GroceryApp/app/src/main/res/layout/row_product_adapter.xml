@@ -44,8 +44,9 @@
         android:id="@+id/btn_add_cart_item"
         android:layout_width="70dp"
         android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="6dp"
+        android:layout_below="@+id/image_view_product"
         android:background="@color/colorAccent"
         android:text="Add"
         android:textColor="@color/colorButtonText"
@@ -88,6 +89,5 @@
         android:textColor="@color/colorButtonText"
         android:textSize="22sp"
         android:visibility="invisible"/>
-
 
 </RelativeLayout>

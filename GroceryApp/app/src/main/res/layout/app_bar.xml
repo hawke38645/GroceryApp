@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     app:titleTextColor="@color/colorButtonText"
-    android:theme="@style/Platform.MaterialComponents.Light"
+    android:theme="@style/Platform.MaterialComponents"
     app:subtitleTextColor="@color/colorButtonText"
     android:background="@color/colorPrimaryDark" />

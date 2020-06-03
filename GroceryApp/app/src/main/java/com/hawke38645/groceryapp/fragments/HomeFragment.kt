@@ -77,7 +77,7 @@ class HomeFragment : Fragment() {
                 var gson = GsonBuilder().create()
                 var categoryList = gson.fromJson(it.toString(), CategoryList::class.java)
                 mList = categoryList.data
-                Toast.makeText(activity, "" + mList.size, Toast.LENGTH_SHORT).show()
+                //Toast.makeText(activity, "" + mList.size, Toast.LENGTH_SHORT).show()
                 adapterCategory.setData(mList)
             },
             Response.ErrorListener {

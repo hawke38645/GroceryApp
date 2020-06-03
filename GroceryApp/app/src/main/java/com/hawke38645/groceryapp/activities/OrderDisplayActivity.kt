@@ -13,11 +13,13 @@ import androidx.core.view.MenuItemCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.gson.GsonBuilder
 import com.android.volley.Request
 import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.google.gson.GsonBuilder
+import com.android.volley.toolbox.Volley.*
 import com.hawke38645.groceryapp.R
 import com.hawke38645.groceryapp.adapters.AdapterOrder
 import com.hawke38645.groceryapp.app.Endpoints
@@ -29,6 +31,8 @@ import com.hawke38645.groceryapp.models.Order
 import com.hawke38645.groceryapp.models.OrderList
 import kotlinx.android.synthetic.main.activity_order_display.*
 import kotlinx.android.synthetic.main.menu_cart_layout.view.*
+
+
 
 class OrderDisplayActivity : AppCompatActivity(), UpdateCartIcon {
 
@@ -63,7 +67,7 @@ class OrderDisplayActivity : AppCompatActivity(), UpdateCartIcon {
                 var gson = GsonBuilder().create()
                 var orderList = gson.fromJson(it.toString(), OrderList::class.java)
                 mList = orderList.data
-                Toast.makeText(this, "" + mList.size, Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "" + mList.size, Toast.LENGTH_SHORT).show()
                 adapterOrder.setData(mList)
             },
             Response.ErrorListener {

@@ -35,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             if (validateInput()) {
                 progress_bar_lgn.show()
-
                 val inputEmail = edit_text_email_lgn.text.toString()
                 val inputPassword = edit_text_password_lgn.text.toString()
                 loginUser(inputEmail, inputPassword)
@@ -60,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
             Response.Listener {
                 progress_bar_lgn.hide()
                 Log.d("APIResponse: ", it.toString())
-                Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
                 var gson = GsonBuilder().create()
                 var authResponse = gson.fromJson(it.toString(), AuthResponse::class.java)
                 sessionManager.register(authResponse.user)

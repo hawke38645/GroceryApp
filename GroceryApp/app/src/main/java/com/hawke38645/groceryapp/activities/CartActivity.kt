@@ -83,9 +83,9 @@ class CartActivity : AppCompatActivity(), AdapterCart.OnAdapterCartInteraction {
 
     private fun displayOrder() {
         var orderSummary = databaseHelper.calculateOrderSummary()
-        text_view_cart_total_mrp.text = "MRP:                                                                                           ₹${orderSummary.totalMrp}"
-        text_view_cart_total_discount.text = "Discount:                                                                                        -₹${orderSummary.discount}"
-        text_view_cart_total_price.text = "Total:                                                                                          ₹${orderSummary.totalPrice}"
+        text_view_cart_total_mrp.text = "MRP: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t₹${orderSummary.totalMrp}"
+        text_view_cart_total_discount.text = "Discount: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t₹${orderSummary.discount}"
+        text_view_cart_total_price.text = "Total: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t₹${orderSummary.totalPrice}"
 
     }
 

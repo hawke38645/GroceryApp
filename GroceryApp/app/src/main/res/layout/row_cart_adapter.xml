@@ -22,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_cart_item_name"
-        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_toRightOf="@id/image_view_cart_item"
+        android:layout_toEndOf="@id/image_view_cart_item"
         android:text="MRP"
         android:textSize="18sp" />
 
@@ -33,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_cart_item_name"
-        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="32dp"
-        android:layout_toRightOf="@id/text_view_cart_item_mrp"
+        android:layout_toEndOf="@id/text_view_cart_item_mrp"
         android:text="Price"
         android:textColor="@color/colorButtonPlus"
         android:textSize="18sp" />
@@ -54,7 +54,7 @@
         android:id="@+id/btn_delete_cart_item"
         android:layout_width="70dp"
         android:layout_height="35dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="18dp"
         android:backgroundTint="@color/colorAccent"
         android:text="Remove"

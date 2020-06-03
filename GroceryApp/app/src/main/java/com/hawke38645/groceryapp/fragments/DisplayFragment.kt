@@ -86,7 +86,7 @@ class DisplayFragment : Fragment(), AdapterProduct.OnAdapterProductInteraction {
             var gson = GsonBuilder().create()
             var prodlist = gson.fromJson(it.toString(), ProductList::class.java)
             mList = prodlist.data
-            Toast.makeText(activity as Context, "" + mList.size, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(activity as Context, "" + mList.size, Toast.LENGTH_SHORT).show()
             adapterProduct.setData(mList)
         },
         Response.ErrorListener {

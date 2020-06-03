@@ -1,9 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.OrderViewActivity">
+    android:background="@color/colorPrimary"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_view_order_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Order"
+        android:textColor="@color/colorButtonText"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_title"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Name:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_name"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Email:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_email"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Mobile:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_mobile"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Order ID:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_street_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_order_id"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Streetname:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_street_name"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="City:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_city"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Pincode:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_pincode"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TOTAL AMOUNT PAID:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_view_order_detail_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_total"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="DISCOUNT AMOUNT:"
+        android:textColor="@color/colorButtonText"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_reorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_order_detail_discount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_login_button"
+        android:text="ONE CLICK REORDER"
+        android:textColor="@color/colorButtonText" />
+
+</RelativeLayout>
